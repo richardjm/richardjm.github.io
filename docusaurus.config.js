@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Richard J M',
+  title: 'richardjm',
   tagline: 'General dogsbody',
   favicon: 'img/logo.svg',
 
