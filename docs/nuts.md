@@ -2,7 +2,7 @@
 
 Dimensions of hex nuts.
 
-| Size | Flats Max | Flats Min | Thickness Max | Thickness Min |
+| Size | Flats<br/> Max | Flats<br/> Min | Thickness<br/> Max | Thickness<br/> Min |
 |-|-|-|-|-|
 | M2 | 5 | 4.82 | 2 | 1.75 |
 | M3 | 5.5 | 5.32 | 2.4 | 2.15 |
