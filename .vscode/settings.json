@@ -1,0 +1,11 @@
+{
+    "npm.scriptExplorerAction": "run",
+    "npm.scriptExplorerExclude": [
+        "pre.*",
+        "post.*",
+        "write-.*",
+        "docusaurus",
+        "deploy"
+    ],
+    "npm.enableRunFromFolder": true
+}

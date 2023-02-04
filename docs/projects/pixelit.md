@@ -10,6 +10,47 @@ greaseproof paper on the inside.
 
 ![](/img/pixelit.jpg)
 
+## Sequence diagram for integration with Klipper via Home Assistant
+```mermaid
+sequenceDiagram
+    participant HA as Home Assistant
+    participant M as Moonraker
+    participant P as PixelIt
+    participant A as Alexa
+    participant C as Lights
+    participant Ph as Phone
+    loop  every 5 seconds
+        HA ->> M: Request printer info
+        activate M
+        M -) HA: Update Sensors
+        deactivate M
+        alt display message changed
+            HA -) P: Show message
+            activate P
+            P ->> P: Revert to clock after delay
+            deactivate P 
+        else percent complete different
+            HA -) P: Show XX %
+            activate P
+            P ->> P: Revert to clock after delay
+            deactivate P 
+        else status complete
+            par
+                HA -) P: Display Complete
+                activate P
+                P ->> P: Revert to clock after delay
+                deactivate P 
+            and
+                HA -) A: Announce "3D Print Complete"
+            and
+                HA -) C: Flash lights
+            and
+                HA -) Ph: Send phone notification
+            end 
+        end
+    end
+```
+
 ## Basic commands
 ```yaml
 rest_command:
