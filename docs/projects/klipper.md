@@ -1,6 +1,6 @@
-# Klipper
+# Klipper in Home Assistant
 
-Connects and polls moonraker and reveals many settings.
+Connects and polls moonraker and reveals many settings via home assistant.
 
 Also allows executing macros easily.
 
@@ -90,10 +90,10 @@ omeassistant:
 ```yaml
 rest_command:
   voron2_gcode:
-    url: http://192.168.0.45/printer/gcode/script?script={{gcode}}
+    url: http://X.X.X.X/printer/gcode/script?script={{gcode}}
     method: post
   voron2_shutdown:
-    url: http://192.168.0.45/machine/shutdown
+    url: http://X.X.X.X/machine/shutdown
     method: post
     timeout: 30
 ```
@@ -382,6 +382,8 @@ action:
     data: {}
 mode: single
 ```
+
+`automation.shutdown_3d_printer`
 
 ```yaml
 alias: Shutdown Voron 2.4
