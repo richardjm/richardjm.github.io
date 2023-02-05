@@ -6,7 +6,7 @@ Also allows executing macros easily.
 
 ![](/img/ha_klipper.png)
 
-## Sequence diagram for safe voron shudown
+## Sequence diagram for safe voron shutdown
 ```mermaid
 sequenceDiagram
     participant HA as Home Assistant

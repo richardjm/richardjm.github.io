@@ -24,17 +24,17 @@ sequenceDiagram
         activate M
         M -) HA: Update Sensors
         deactivate M
-        alt display message changed
+        alt when voron_message changes and not Empty
             HA -) P: Show message
             activate P
             P ->> P: Revert to clock after delay
             deactivate P 
-        else percent complete different
+        else when voron_progress percent complete changes
             HA -) P: Show XX %
             activate P
             P ->> P: Revert to clock after delay
             deactivate P 
-        else status complete
+        else when voron_message changes from Empty to Complete
             par
                 HA -) P: Display Complete
                 activate P
