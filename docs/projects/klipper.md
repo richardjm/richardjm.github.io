@@ -6,6 +6,28 @@ Also allows executing macros easily.
 
 ![](/img/ha_klipper.png)
 
+## Sequence diagram for safe voron shudown
+```mermaid
+sequenceDiagram
+    participant HA as Home Assistant
+    participant M as Moonraker
+    participant S as Switch
+    loop  every 5 seconds
+        HA ->> M: Request printer info
+        activate M
+        M -) HA: Update Sensors
+        deactivate M
+        alt if bed temp < 43 and safe shutdown requested
+            activate HA
+            HA -) M: REST: voron_shutdown
+            HA ->> HA: Delay 20 seconds
+            HA -) S: Turn off switch
+            HA ->> HA: Turn off safe shutdown requested
+            deactivate HA
+        end
+    end
+```
+
 ## Main sensors
 ```yaml
 rest:
