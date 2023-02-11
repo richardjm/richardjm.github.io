@@ -1,7 +1,7 @@
 # Bolts
 
 ## SHCS - CAD
-| Size | Screw into plastic | Through hole | Head diameter | Head hyeight |
+| Size | Screw into plastic | Through hole | Head diameter | Head height |
 |------|--------------------|--------------|---------------|-------------|
 | M2   | 1.9                | 2.4          | 2.5           | 2           |
 | M3   | 2.8                | 3.2          | 6             | 3.4         |
