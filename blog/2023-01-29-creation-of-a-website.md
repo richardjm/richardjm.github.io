@@ -4,6 +4,6 @@ authors: richardjm
 tags: [hola, docusaurus]
 ---
 
-# Creation of a website
+## Creation of a website
 
 Hello world

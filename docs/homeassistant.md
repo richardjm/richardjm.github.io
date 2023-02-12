@@ -8,6 +8,7 @@
 - [PixelIt](pixelit) display
 
 ### Notify
+
 `scripts.notify`
 
 Generic notify script that speaks a message via Alexa, flashes lights
@@ -122,6 +123,7 @@ max: 10
 ```
 
 ### Flash lights
+
 `scripts.flash_ceiling`
 
 ```yaml

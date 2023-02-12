@@ -8,9 +8,10 @@ greaseproof paper on the inside.
 
 [https://pixelit-project.github.io/](https://pixelit-project.github.io/)
 
-![](/img/pixelit.jpg)
+![pixelit](/img/pixelit.jpg)
 
 ## Sequence diagram for integration with Klipper via Home Assistant
+
 ```mermaid
 sequenceDiagram
     participant HA as Home Assistant
@@ -52,6 +53,7 @@ sequenceDiagram
 ```
 
 ## Basic commands
+
 ```yaml
 rest_command:
   pixelit_message:
@@ -83,9 +85,10 @@ switch:
 ```
 
 ## Alexa timers
+
 `automation.pixelit_timer`
 
-![](/img/pixelit_timer.jpg)
+![timer](/img/pixelit_timer.jpg)
 
 ```yaml
 alias: Pixelit Timer
@@ -138,9 +141,10 @@ rest_command:
 ```
 
 ## Display status updates from klipper
+
 Ensure you have the moonraker sensors from [Klipper](klipper)
 
-![](/img/pixelit_print_progress.jpg)
+![progress](/img/pixelit_print_progress.jpg)
 
 ```yaml
 rest_command:
@@ -152,6 +156,7 @@ rest_command:
 ```
 
 ### M117
+
 `automation.voron_m117`
 
 ```yaml
@@ -202,6 +207,7 @@ mode: single
 ```
 
 ### Print progress
+
 `automation.voron_print_progress`
 
 ```yaml
@@ -236,6 +242,7 @@ mode: single
 ```
 
 ### Print complete
+
 `automation.voron_print_complete`
 
 ```yaml

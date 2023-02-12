@@ -4,9 +4,10 @@ Connects and polls moonraker and reveals many settings via home assistant.
 
 Also allows executing macros easily.
 
-![](/img/ha_klipper.png)
+![klipper](/img/ha_klipper.png)
 
 ## Sequence diagram for safe voron shutdown
+
 ```mermaid
 sequenceDiagram
     participant HA as Home Assistant
@@ -29,6 +30,7 @@ sequenceDiagram
 ```
 
 ## Main sensors
+
 ```yaml
 rest:
   - resource: http://X.X.X.X/printer/objects/query?extruder=temperature,target&heater_bed=temperature,target&temperature_host%20pi&temperature_sensor%20enclosure_temp=temperature&display_status
@@ -93,6 +95,7 @@ rest:
 ```
 
 ## Nicer icons by default
+
 ```yaml
 omeassistant:
   customize:
@@ -109,6 +112,7 @@ omeassistant:
 ```
 
 ## Run macros
+
 ```yaml
 rest_command:
   voron2_gcode:
@@ -121,6 +125,7 @@ rest_command:
 ```
 
 ## Dashboard
+
 ```yaml
   - theme: Backend-selected
     icon: mdi:printer-3d-nozzle
@@ -369,6 +374,7 @@ rest_command:
 ```
 
 ## Voron safe shutdown
+
 Automation to shutdown and then turn off printer.
 
 ```yaml
