@@ -18,15 +18,15 @@ Slight variant by me - https://github.com/richardjm/Crucible/tree/richardjm/vari
 - **(2) NEMA17 Stepper Motor w/ integrated lead screw 200mm T8x8**
 - (10) m3x30  shcs (bottom z to motors)
 - (2) m3x35 shcs (bottom z to rear motor z-chain)
-- (3) m5x16 shcs (ge5c)
-- (3) m5 nut or nyloc
+- **(3) m5x16 shcs (ge5c)**
+- **(3) m5 nut or nyloc**
 - **(3) ge5c x 3**
 - (9) m3x6 bhcs (ge5c retainers)
 - (4) m3x12 bhcs (leadscrew nut, cut circle)
 - (2) m3x14 bhcs + nut (leadscrew nut - rear, full circle)
 - (4) m2x10 shcs + washers (to rail)
 
-*tbc - screws for accent plates*
+TBC - screws for accent plates
 
 ### AB Motors
 
@@ -49,3 +49,12 @@ Per motor:
 - (2) m3x8 shcs + square nuts (middle rear to ab extrusion)
 - (1) m3x20 shcs (when using mx3x20 variant)
 - (1) m3x10 shcs (rear extrusion to bottom extrusion)
+
+### Braces (don't do this)
+
+Per brace:
+
+- (1) m3x12 shcs
+- (1) m3x18 shcs
+- (1) m3x20 shcs
+- (6) m3 square nuts
