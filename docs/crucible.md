@@ -10,8 +10,15 @@ Slight variant by me - https://github.com/richardjm/Crucible/tree/richardjm/vari
 - Different skirt (wip)
 - Mini-AB (wip)
 - Clips for 2mm panels (wip)
+- Smaller hole for screw into plastic idler in a/b mounts
+- Sensorless x/y
+- Changed base plate dxf
+- Klicky on right to avoid clash with z-chain
+- Drill guides and gantry positioning tool
 
 ## Hardware
+
+**Be warned** - this whole section is a work in progress and likely wrong.
 
 ### Lead screws
 
@@ -36,6 +43,16 @@ Per motor:
 - (2) m3x30 shcs + (2) washers (short stack)
 - **(5) f623rs + (10) washers**
 - (2) m3x40 shcs + square nuts (to side extrusion)
+- (1) mx3x? + square nut (under mount to side extrusion)
+
+### Idler (WIP)
+
+Per side:
+
+- (2) m3x6 bhcs
+- (2) m3x10 bhcs/shcs
+- (1) m3x40 shcs
+- (5) m3 square nuts
 
 ## Frame
 
