@@ -15,6 +15,8 @@ Slight variant by me - https://github.com/richardjm/Crucible/tree/richardjm/vari
 - Changed base plate dxf
 - Klicky on right to avoid clash with z-chain
 - Drill guides and gantry positioning tool
+- Canbus mount for Mellow fly sht36 v2
+- Smaller x-carrage for a 17mm pancake motor
 
 ## Hardware
 
@@ -35,6 +37,14 @@ Slight variant by me - https://github.com/richardjm/Crucible/tree/richardjm/vari
 
 TBC - screws for accent plates
 
+### Bed Assembly
+
+- (3) m3x8 bhcs + square nuts (fans)
+- (2) m3x8 shcs + square nuts (rear)
+- (4) m3x10 shcs + square nuts (left+right)
+
+TBC - screws for accent plates
+
 ### AB Motors
 
 Per motor:
@@ -43,7 +53,7 @@ Per motor:
 - (2) m3x30 shcs + (2) washers (short stack)
 - **(5) f623rs + (10) washers**
 - (2) m3x40 shcs + square nuts (to side extrusion)
-- (1) mx3x? + square nut (under mount to side extrusion)
+- (1) mx3x10 + square nut (under mount to side extrusion)
 
 ### Idler (WIP)
 
@@ -67,6 +77,10 @@ Per side:
 - (1) m3x20 shcs (when using mx3x20 variant)
 - (1) m3x10 shcs (rear extrusion to bottom extrusion)
 
+### Bed
+
+- (1) m3x20 bhcs
+
 ### Braces (don't do this)
 
 Per brace:
@@ -75,3 +89,22 @@ Per brace:
 - (1) m3x18 shcs
 - (1) m3x20 shcs
 - (6) m3 square nuts
+
+## Mini Stealthburner
+
+### Mellow Fly SHT36 v2
+
+This is for the "usermod" flysht36-mount.
+
+- (2) m3x8 bhcs
+- (2) m3x8 shcs
+
+### 17mm Pancake motor
+
+As I'm using a 17mm pancake motor the x-carriage went on a diet in the
+"usermod" carraige-slimmed.
+
+For the -5.95 version.
+
+- (1) m3x10
+- (2) m3x40 + nyloc
