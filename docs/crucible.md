@@ -1,8 +1,8 @@
 # Crucible
 
-A v0/trident hybrid by Maverick - https://github.com/PrintersForAnts/Crucible
+A v0/trident hybrid by Maverick - <https://github.com/PrintersForAnts/Crucible>
 
-Slight variant by me - https://github.com/richardjm/Crucible/tree/richardjm/variation
+Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/variation>
 
 - Reduction in branding
 - Changed colours (primary, accent, touch)
@@ -39,9 +39,9 @@ TBC - screws for accent plates
 
 ### Bed Assembly
 
-- (3) m3x8 bhcs + square nuts (fans)
-- (2) m3x8 shcs + square nuts (rear)
-- (4) m3x10 shcs + square nuts (left+right)
+- (3) m3x8 bhcs + nuts (fans)
+- (2) m3x8 shcs + nuts (rear)
+- (4) m3x10 shcs + nuts (left+right)
 
 TBC - screws for accent plates
 
@@ -50,19 +50,19 @@ TBC - screws for accent plates
 Per motor:
 
 - (4) m3x35 shcs (to motor)
-- (2) m3x30 shcs + (2) washers (short stack)
-- **(5) f623rs + (10) washers**
-- (2) m3x40 shcs + square nuts (to side extrusion)
-- (1) mx3x10 + square nut (under mount to side extrusion)
+- (2) m3x30 shcs + (2) m3x6x0.5 shim (short stack)
+- **(5) f623rs + (10) m3x6x0.5 shim**
+- (2) m3x40 shcs + nuts (to side extrusion)
+- (1) mx3x10 + nut (under mount to side extrusion)
 
-### Idler (WIP)
+## AB Idlers
 
-Per side:
+- (2) m3x6 bhcs + nuts (frame)
+- (2) m3x10 shcs + nuts (tensioner)
+- (2) m3x6x0.5 shim + (2) f623rs + m3x40 + nut (bearing stack)
+- (1) m3x25 + heat set insert (tensioning arm)
 
-- (2) m3x6 bhcs
-- (2) m3x10 bhcs/shcs
-- (1) m3x40 shcs
-- (5) m3 square nuts
+***Warning:** This part is a real pain to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.*
 
 ## Frame
 
@@ -72,8 +72,8 @@ Per side:
 
 ### Rear
 
-- (2) m3x14 shcs + square nuts (middle rear to ab extrusion)
-- (2) m3x8 shcs + square nuts (middle rear to ab extrusion)
+- (2) m3x14 shcs + nuts (middle rear to ab extrusion)
+- (2) m3x8 shcs + nuts (middle rear to ab extrusion)
 - (1) m3x20 shcs (when using mx3x20 variant)
 - (1) m3x10 shcs (rear extrusion to bottom extrusion)
 
@@ -83,12 +83,12 @@ Per side:
 
 ### Braces (don't do this)
 
-Per brace:
+Per brace (I currently have 12 braces, I think you could put max 18)
 
 - (1) m3x12 shcs
 - (1) m3x18 shcs
 - (1) m3x20 shcs
-- (6) m3 square nuts
+- (6) m3 nuts
 
 ## Mini Stealthburner
 
