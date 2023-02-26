@@ -25,7 +25,7 @@ Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/var
 ### Lead screws
 
 - **(2) NEMA17 Stepper Motor w/ integrated lead screw 200mm T8x8**
-- (10) m3x30  shcs (bottom z to motors)
+- (10) m3x30 shcs (bottom z to motors)
 - (2) m3x35 shcs (bottom z to rear motor z-chain)
 - **(3) m5x16 shcs (ge5c)**
 - **(3) m5 nut or nyloc**
@@ -33,7 +33,8 @@ Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/var
 - (9) m3x6 bhcs (ge5c retainers)
 - (4) m3x12 bhcs (leadscrew nut, cut circle)
 - (2) m3x14 bhcs + nut (leadscrew nut - rear, full circle)
-- (4) m2x10 shcs + washers (to rail)
+- (4) m2x6 shcs + washers (to rail)
+- (4) m3x10 bhcs + nuts (recommend _no_drop_front_leadscrews.stl_)
 
 TBC - screws for accent plates
 
@@ -60,9 +61,18 @@ Per motor:
 - (2) m3x6 bhcs + nuts (frame)
 - (2) m3x10 shcs + nuts (tensioner)
 - (2) m3x6x0.5 shim + (2) f623rs + m3x40 + nut (bearing stack)
-- (1) m3x25 + heat set insert (tensioning arm)
+- (1) m3x25 shcs + heatset insert (tensioning arm)
 
-***Warning:** This part is a real pain to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.*
+## XY Joints
+
+- (2) m3 heatset inserts
+- (4) m2x6 shcs
+- (3) m3x25 shcs
+- (2) m3x10 bhcs + nuts
+- (1) m3x8 bhcs + nut
+- (4) f623rs + (4) m3x6x0.5 shim
+
+**_Warning:_ This part is a real pain to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
 
 ## Frame
 
