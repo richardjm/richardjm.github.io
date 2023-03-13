@@ -4,6 +4,8 @@ A v0/trident hybrid by Maverick - <https://github.com/PrintersForAnts/Crucible>
 
 Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/variation>
 
+My build in progress klipper backup is at <https://github.com/richardjm/crucible-klipper-backup>
+
 - Reduction in branding
 - Changed colours (primary, accent, touch)
 - Exported STLs
