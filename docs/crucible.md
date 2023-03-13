@@ -8,15 +8,28 @@ Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/var
 - Changed colours (primary, accent, touch)
 - Exported STLs
 - Different skirt (wip)
-- Mini-AB (wip)
-- Clips for 2mm panels (wip)
+- Mini-Stealthburner
+- Various clip sizes panels
 - Smaller hole for screw into plastic idler in a/b mounts
 - Sensorless x/y
 - Changed base plate dxf
 - Klicky on right to avoid clash with z-chain
-- Drill guides and gantry positioning tool
+- Tools
+  - Drill guides
+  - Grantry positioning tool
+  - MGN9 1515 rail guide
+  - MGN7 1515 rail guide
+
+In the usermods folder:
+
 - Canbus mount for Mellow fly sht36 v2
 - Smaller x-carrage for a 17mm pancake motor
+- Cover for front of bed
+- Beefier left idler
+- Sawtooth led mount
+- Pointier rail stops to add range (wip)
+- Shorter rear z motor mount (wip)
+- UnKlickyNG BFP
 
 **Be warned - this whole section is a work in progress and likely wrong.**
 
@@ -24,7 +37,7 @@ Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/var
 
 ### Lead screws
 
-- **(2) NEMA17 Stepper Motor w/ integrated lead screw 200mm T8x8**
+- **(3) NEMA17 Stepper Motor w/ integrated lead screw 200mm T8x8**
 - (10) m3x30 shcs (bottom z to motors)
 - (2) m3x35 shcs (bottom z to rear motor z-chain)
 - **(3) m5x16 shcs (ge5c)**
@@ -74,12 +87,14 @@ Per motor:
 - (1) m3x8 bhcs + nut
 - (4) f623rs + (4) m3x6x0.5 shim
 
-**_Warning:_ This part is a real pain to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
+**_Warning:_ This part is very hard to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
 
 ### Klicky
 
 - (2) m3 heatset inserts
 - (2) m3x6 + nuts (recommend _no_drop_double_nut.stl_)
+- (2) m2x10 screws
+- (8) 6x3mm magnets
 
 ## Frame
 
