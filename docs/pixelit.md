@@ -8,6 +8,8 @@ greaseproof paper on the inside.
 
 [https://pixelit-project.github.io/](https://pixelit-project.github.io/)
 
+I bought the leds [from AliExpress here](https://www.aliexpress.com/item/1005003867884387.html).
+
 ![pixelit](/img/pixelit.jpg)
 
 ## Sequence diagram for integration with Klipper via Home Assistant
