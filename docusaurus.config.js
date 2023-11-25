@@ -116,6 +116,10 @@ const config = {
                 label: 'Home Assistant',
                 href: 'https://github.com/richardjm/home-automation',
               },
+              {
+                label: 'Moonraker',
+                href: 'https://github.com/Arksine/moonraker',
+              },
             ],
           },
           {
@@ -124,10 +128,6 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'Moonraker',
-                href: 'https://github.com/Arksine/moonraker',
               },
             ],
           },
