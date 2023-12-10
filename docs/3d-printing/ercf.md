@@ -85,6 +85,36 @@ gcode:
     M117 Complete
 ```
 
+## RESUME
+
+```text
+[gcode_macro RESUME]
+rename_existing: BASE_RESUME
+variable_zhop: 0
+variable_etemp: 0
+gcode:
+    # Parameters
+    {% set e = params.E|default(0)|int %}                                                          ; nozzle prime amount
+
+    {% if printer['pause_resume'].is_paused|int == 1 %}
+
+        {% if printer.ercf.is_paused|int == 1 %}
+            M118 You can't resume the print without unlocking the ERCF first.
+            M118 Run ERCF_UNLOCK and solve any issue before hitting Resume again
+        {% endif %}
+        
+        ...
+
+        M117 Printing
+
+        {% if printer.ercf.clog_detection|int == 1 %}
+            SET_FILAMENT_SENSOR SENSOR=toolhead_sensor ENABLE=1
+        {% endif %}
+
+        BASE_RESUME
+    {% endif %}
+```
+
 ### INITIAL_LOAD_LOCATION
 
 ```text
