@@ -1,5 +1,9 @@
 # Crucible
 
+![Printer](../static/img/crucible/printer.jpg)
+
+## Source
+
 My take on crucible - <https://github.com/richardjm/Crucible>
 
 ![Crucible](../static/img/crucible/crucible.png)
@@ -38,7 +42,10 @@ In the usermods folder:
 - [UnKlickyNG BFP](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/UnKlickyNG)
 - [Everywhere Braces](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/everywhere-brace)
 
-**Be warned - this whole section is a work in progress and likely wrong.**
+:::warning
+This whole section is a work in progress and likely wrong.
+:::
+
 
 ## Z assembly
 
@@ -95,7 +102,14 @@ Per motor:
 - (2) m3x6x0.5 shim + (2) f623rs + m3x40 + nut (bearing stack)
 - (1) m3x25 shcs + heatset insert (tensioning arm)
 
-**_Warning:_ This part is very hard to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
+:::warning
+This part is very hard to assemble. I got lucky by re-using some of my v0
+extrusions that have a hole in that location I could use a follower to
+construct the stack and the push the m3x40 through the tensionsing arm and
+bearing stack in one.
+The last part attaching the tensioner to the side face of the front.
+Good luck.
+:::
 
 ### XY Joints
 
@@ -106,7 +120,11 @@ Per motor:
 - (1) m3x8 bhcs + nut
 - (4) f623rs + m3x6x0.5 shim (4)
 
-### Klicky (I've sinced moved to TAP)
+### Klicky
+
+:::note
+I've since moved to TAP as I'm also using an extrusionless mgn9h
+:::
 
 - (2) m3 heatset inserts
 - (2) m3x6 + nuts (recommend _no_drop_double_nut.stl_)
@@ -134,6 +152,10 @@ Per motor:
 
 ## Mini Stealthburner
 
+:::note
+I'm currently using Stealthbrick beta with TAP and cnc mini sherpa
+:::
+
 ### Mellow Fly SHT36 v2
 
 This is for the "usermod" flysht36-mount.
@@ -155,7 +177,7 @@ For the -5.95 version.
 
 ![Braces](../static/img/crucible/braces.png)
 
-Per brace (I currently have 12 braces, I think you could put max 18)
+Per brace (There are 18)
 
 - (1) m3x12 shcs
 - (1) m3x18 shcs
