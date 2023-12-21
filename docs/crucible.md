@@ -16,7 +16,7 @@ My klipper backup is at <https://github.com/richardjm/crucible-klipper-backup>
 - Changed colours (primary, accent, touch)
 - Exported STLs
 - Stealth skirts
-- Stealth brick - beta
+- Stealthbrick beta with Sherpa mini
 - Various clip sizes panels
 - Smaller hole for screw into plastic idler in a/b mounts
 - Sensorless x/y
@@ -153,7 +153,7 @@ I've since moved to TAP as I'm also using an extrusionless mgn9h
 ## Mini Stealthburner
 
 :::note
-I'm currently using Stealthbrick beta with TAP and cnc mini sherpa
+I'm currently using Stealthbrick beta with TAP and cnc Sherpa Mini
 :::
 
 ### Mellow Fly SHT36 v2
