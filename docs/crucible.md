@@ -1,21 +1,25 @@
 # Crucible
 
-A v0/trident hybrid by Maverick - <https://github.com/PrintersForAnts/Crucible>
+My take on crucible - <https://github.com/richardjm/Crucible>
 
-Slight variant by me - <https://github.com/richardjm/Crucible/tree/richardjm/variation>
+![Crucible](../static/img/crucible/crucible.png)
 
-My build in progress klipper backup is at <https://github.com/richardjm/crucible-klipper-backup>
+The original v0/trident hybrid by Maverick - <https://github.com/PrintersForAnts/Crucible>
+
+My klipper backup is at <https://github.com/richardjm/crucible-klipper-backup>
 
 - Reduction in branding
 - Changed colours (primary, accent, touch)
 - Exported STLs
-- Different skirt (wip)
-- Mini-Stealthburner
+- Stealth skirts
+- Stealth brick - beta
 - Various clip sizes panels
 - Smaller hole for screw into plastic idler in a/b mounts
 - Sensorless x/y
 - Changed base plate dxf
-- Klicky on right to avoid clash with z-chain
+- Voron TAP
+- Extrusionless x-gantry
+- [Replaced idler (idle_idea)](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/idle_idea)
 - Tools
   - Drill guides
   - Grantry positioning tool
@@ -24,18 +28,21 @@ My build in progress klipper backup is at <https://github.com/richardjm/crucible
 
 In the usermods folder:
 
-- Canbus mount for Mellow fly sht36 v2
-- Smaller x-carrage for a 17mm pancake motor
-- Cover for front of bed
-- Beefier left idler
-- Sawtooth led mount
-- Pointier rail stops to add range (wip)
-- Shorter rear z motor mount (wip)
-- UnKlickyNG BFP
+- [Canbus mount for Mellow fly sht36 v2](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/flysht36-mount)
+- [Smaller x-carrage for a 17mm pancake motor](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/carriage-slimmed)
+- [Cover for front of bed](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/frond-bed-cover)
+- [Beefier left idler](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/idler_beefy)
+- [Sawtooth led mount](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/leds)
+- [Pointier rail stops to add range](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/pointy-stop)
+- [Shorter rear z motor mount](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/short-rear-z)
+- [UnKlickyNG BFP](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/UnKlickyNG)
+- [Everywhere Braces](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/everywhere-brace)
 
 **Be warned - this whole section is a work in progress and likely wrong.**
 
 ## Z assembly
+
+![Z Assembly](../static/img/crucible/z-asembly.png)
 
 ### Lead screws
 
@@ -63,6 +70,8 @@ TBC - screws for accent plates
 
 ## Gantry
 
+![Crucible Gantry](../static/img/crucible/gantry.png)
+
 ### AB Motors
 
 Per motor:
@@ -73,12 +82,20 @@ Per motor:
 - (2) m3x40 shcs + nuts (to side extrusion)
 - (1) mx3x10 + nut (under mount to side extrusion)
 
-### AB Idlers
+### AB Idleres (idle_idea)
+
+- (4) m3x18 bhcs + heatset inserts (tensioner carrier)
+- (4) m3x10 shcs (block to extrusion)
+- (4) m3x6x0.5 shim + (4) f623rs + (2) m3x16 + (2) nut (bearing stack)
+
+### AB Idlers (original)
 
 - (2) m3x6 bhcs + nuts (frame)
 - (2) m3x10 shcs + nuts (tensioner)
 - (2) m3x6x0.5 shim + (2) f623rs + m3x40 + nut (bearing stack)
 - (1) m3x25 shcs + heatset insert (tensioning arm)
+
+**_Warning:_ This part is very hard to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
 
 ### XY Joints
 
@@ -87,11 +104,9 @@ Per motor:
 - (3) m3x25 shcs
 - (2) m3x10 bhcs + nuts
 - (1) m3x8 bhcs + nut
-- (4) f623rs + (4) m3x6x0.5 shim
+- (4) f623rs + m3x6x0.5 shim (4)
 
-**_Warning:_ This part is very hard to assemble. I got lucky by re-using some of my v0 extrusions that have a hole in that location I could use a follower to construct the stack and the push the m3x40 through the tensionsing arm and bearing stack in one. The last part attaching the tensioner to the side face of the front. Good luck.**
-
-### Klicky
+### Klicky (I've sinced moved to TAP)
 
 - (2) m3 heatset inserts
 - (2) m3x6 + nuts (recommend _no_drop_double_nut.stl_)
@@ -99,6 +114,8 @@ Per motor:
 - (8) 6x3mm magnets
 
 ## Frame
+
+![Crucible Frame](../static/img/crucible/frame.png)
 
 ### 200mm extrusions
 
@@ -135,6 +152,8 @@ For the -5.95 version.
 - (2) m3x40 + nyloc
 
 ## Braces (don't do this)
+
+![Braces](../static/img/crucible/braces.png)
 
 Per brace (I currently have 12 braces, I think you could put max 18)
 
