@@ -201,6 +201,26 @@ lsusb
 
 :( board fried should see `Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`
 
+## GitHub for config
+
+Using your email from above.
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "1234567+username@users.noreply.github.com"
+cd .ssh
+cat id_rsa.pub
+```
+
+[SSH Keys in GitHub](https://github.com/settings/keys)
+
+Add the contents of `id_rsa.pub` new a new ssh key on the page.
+
+```sh
+ssh -T git@github.com
+...
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
