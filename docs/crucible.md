@@ -4,13 +4,13 @@
 
 ## Source
 
-My take on crucible - <https://github.com/richardjm/Crucible>
+My take on crucible - [https://github.com/richardjm/Crucible](https://github.com/richardjm/Crucible)
 
 ![Crucible](../static/img/crucible/crucible.png)
 
-The original v0/trident hybrid by Maverick - <https://github.com/PrintersForAnts/Crucible>
+The original v0/trident hybrid by Maverick - [https://github.com/PrintersForAnts/Crucible](https://github.com/PrintersForAnts/Crucible)
 
-My klipper backup is at <https://github.com/richardjm/crucible-klipper-backup>
+My klipper backup is at [https://github.com/richardjm/crucible-klipper-backup](https://github.com/richardjm/crucible-klipper-backup)
 
 - Reduction in branding
 - Changed colours (primary, accent, touch)

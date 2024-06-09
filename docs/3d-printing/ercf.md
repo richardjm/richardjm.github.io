@@ -1,4 +1,4 @@
-# ERCF set-up
+# ERCF Setup
 
 ## Overview
 
