@@ -187,11 +187,9 @@ Found canbus_uuid=bac2e369d891, Application: Klipper
 Total 1 uuids found
 ```
 
-### Mellow SHT36v3
+### Mellow Fly SHT36 v3
 
-[Guide for GD32F103](https://canbus.esoterical.online/toolhead_flashing/common_hardware/Mellow%20Fly%20SHT36v2/README.html)
-
-[SHT v6 (Chinese)](https://mellow.klipper.cn/#/board/fly_sht36_v3/README)
+[FLY SHT36 v3 (Chinese)](https://mellow.klipper.cn/#/board/fly_sht36_v3/README)
 
 ```sh
 make clean KCONFIG_CONFIG=config.sht36
