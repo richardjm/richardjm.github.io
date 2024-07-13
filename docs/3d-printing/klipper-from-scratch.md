@@ -187,19 +187,21 @@ Found canbus_uuid=bac2e369d891, Application: Klipper
 Total 1 uuids found
 ```
 
-### Mellow SHT36v2
+### Mellow SHT36v3
 
 [Guide for GD32F103](https://canbus.esoterical.online/toolhead_flashing/common_hardware/Mellow%20Fly%20SHT36v2/README.html)
 
-- Disconnect CAN
-- Put jumper in boot0 next to rgb connector
-- Connect via USB to PI
+[SHT v6 (Chinese)](https://mellow.klipper.cn/#/board/fly_sht36_v3/README)
 
 ```sh
-lsusb
+make clean KCONFIG_CONFIG=config.sht36
+make menuconfig KCONFIG_CONFIG=config.sht36
+make KCONFIG_CONFIG=config.sht36
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+python3 ~/klipper/lib/canboot/flash_can.py -u 8f877804ced8
 ```
 
-:( board fried should see `Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`
+![klipper sht36v3](../../static/img/installing/klipper-sht36v3.png)
 
 ## GitHub for config
 
