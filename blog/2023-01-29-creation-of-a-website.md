@@ -7,3 +7,5 @@ tags: [hola, docusaurus]
 ## Creation of a website
 
 Hello world
+
+<!-- truncate -->
