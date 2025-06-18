@@ -6,7 +6,6 @@ Just some things I've done.
 
 - [Printables](https://www.printables.com/@RichardM)
 - [Thingiverse](https://www.thingiverse.com/richard_j_m/designs)
-- [YouMagine](https://www.youmagine.com/richard-m/designs)
 - [Voron User Mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm)
 - [Other Voron Parts](https://github.com/richardjm/voron-parts)
 - [Other 3D Designs](https://github.com/richardjm/3d-designs)
