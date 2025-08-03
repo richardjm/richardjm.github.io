@@ -139,6 +139,11 @@ ls /dev/serial/by-id
 
 ### Install/Update Octopus (Klipper)
 
+If you don't see the `usb-katapult...` device in the `ls /dev/serial/by-id` ensure you have
+stopped the klipper service and double-clicked on the octopus reset button by
+the usb socket. Yes, this does involve precariously balancing the printer
+to get at it.
+
 ```sh
 make clean KCONFIG_CONFIG=config.Octopus
 make menuconfig KCONFIG_CONFIG=config.Octopus
@@ -179,7 +184,8 @@ Check can0 network status, check `qlen 1024` and `bitrate 1000000`
              0       0      0       0       0       0
 ```
 
-Get the canbus_uuid of the Octopus board
+Get the canbus_uuid of the Octopus board, you may have to stop the klipper service
+and reset the octopus board - one click this time.
 
 ```sh
 ~/klipper $ ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
@@ -190,6 +196,9 @@ Total 1 uuids found
 ### Mellow Fly SHT36 v3
 
 [FLY SHT36 v3 (Chinese)](https://mellow.klipper.cn/#/board/fly_sht36_v3/README)
+
+If you don't see the device on the canbus, ensure the klipper service is stopped
+and unplug the canbus cable and plug it back in again.
 
 ```sh
 make clean KCONFIG_CONFIG=config.sht36
