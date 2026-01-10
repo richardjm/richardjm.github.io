@@ -144,7 +144,7 @@ rest_command:
 
 ## Display status updates from klipper
 
-Ensure you have the moonraker sensors from [Klipper](klipper)
+Ensure you have the moonraker sensors from [Klipper](klipper.md)
 
 ![progress](/img/pixelit_print_progress.jpg)
 

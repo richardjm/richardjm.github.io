@@ -1,4 +1,4 @@
-# Klipper in Home Assistant
+# Klipper
 
 Connects and polls moonraker and reveals many settings via home assistant.
 
