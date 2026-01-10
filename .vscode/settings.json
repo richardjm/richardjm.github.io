@@ -10,5 +10,8 @@
     "npm.enableRunFromFolder": true,
     "[markdown]": {
       "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+    },
+    "files.associations": {
+      "*.mdx": "markdown"
     }
 }

@@ -131,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} richardjm`,
+        copyright: `Copyright © ${new Date().getFullYear()} Richard Mitchell. Licensed under MIT.`,
       },
       prism: {
         theme: lightCodeTheme,

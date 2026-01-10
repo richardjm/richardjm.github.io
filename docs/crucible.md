@@ -35,7 +35,7 @@ In the usermods folder:
 - [Canbus mount for Mellow fly sht36 v2](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/flysht36-mount)
 - [Smaller x-carrage for a 17mm pancake motor](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/carriage-slimmed)
 - [Cover for front of bed](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/frond-bed-cover)
-- [Beefier left idler](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/idler_beefy)
+- [Beefier idlers](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/idler_beefy)
 - [Sawtooth led mount](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/leds)
 - [Pointier rail stops to add range](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/pointy-stop)
 - [Shorter rear z motor mount](https://github.com/richardjm/Crucible/tree/main/Usermods/richardjm/short-rear-z)
