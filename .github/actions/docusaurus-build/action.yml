@@ -4,7 +4,7 @@ inputs:
   node-version:
     description: Node.js version to use
     required: false
-    default: '22'
+    default: '24'
 runs:
   using: composite
   steps:
@@ -27,7 +27,7 @@ runs:
 
     - name: Install dependencies
       shell: bash
-      run: npm install --frozen-lockfile
+      run: npm ci
 
     - name: Build website
       shell: bash
@@ -42,7 +42,7 @@ runs:
       run: npm test
 
     - name: Upload Playwright report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v7
       if: ${{ always() && github.actor != 'nektos/act' }}
       with:
         name: playwright-report

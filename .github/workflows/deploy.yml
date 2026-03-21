@@ -30,7 +30,7 @@ jobs:
         uses: ./.github/actions/docusaurus-build
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         if: ${{ github.actor != 'nektos/act' }}
         with:
           path: ./build
