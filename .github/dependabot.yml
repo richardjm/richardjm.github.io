@@ -15,3 +15,14 @@ updates:
       all:
         patterns:
           - "*"
+
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      day: "Saturday"
+      time: "08:10"
+      interval: "weekly"
+    groups:
+      all:
+        patterns:
+          - "*"
