@@ -43,7 +43,7 @@ runs:
 
     - name: Upload Playwright report
       uses: actions/upload-artifact@v3
-      if: ${{ always() && !env.ACT }}
+      if: ${{ always() && github.actor != 'nektos/act' }}
       with:
         name: playwright-report
         path: playwright-report/
