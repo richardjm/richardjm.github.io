@@ -8,7 +8,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "test": "playwright test"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.2",
@@ -16,10 +17,11 @@
     "@docusaurus/theme-mermaid": "^3.9.2",
     "@mdx-js/react": "^3.1.1",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.48.0",
     "@docusaurus/module-type-aliases": "^3.9.2"
   },
   "browserslist": {

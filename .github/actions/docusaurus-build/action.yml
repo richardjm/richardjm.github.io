@@ -1,0 +1,50 @@
+name: Docusaurus Build and Test Setup
+description: Checkout, setup Node, cache npm, install dependencies, build, and run Playwright tests
+inputs:
+  node-version:
+    description: Node.js version to use
+    required: false
+    default: '22'
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: npm
+
+    - name: Cache npm dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-
+
+    - name: Install dependencies
+      shell: bash
+      run: npm install --frozen-lockfile
+
+    - name: Build website
+      shell: bash
+      run: npm run build
+
+    - name: Install Playwright browsers
+      shell: bash
+      run: npx playwright install --with-deps
+
+    - name: Run Playwright tests
+      shell: bash
+      run: npm test
+
+    - name: Upload Playwright report
+      uses: actions/upload-artifact@v3
+      if: ${{ always() && !env.ACT }}
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 7
