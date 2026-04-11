@@ -16,7 +16,7 @@ updates:
         patterns:
           - "@docusaurus*"
     groups:
-      all:
+      npm-all:
         patterns:
           - "*"
 
@@ -27,6 +27,6 @@ updates:
       time: "10:20"
       interval: "weekly"
     groups:
-      all:
+      gh-actions:
         patterns:
           - "*"
