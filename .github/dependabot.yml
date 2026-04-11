@@ -9,8 +9,12 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       day: "Saturday"
-      time: "08:10"
+      time: "10:10"
       interval: "weekly"
+    groups:
+      docusaurus:
+        patterns:
+          - "@docusaurus*"
     groups:
       all:
         patterns:
