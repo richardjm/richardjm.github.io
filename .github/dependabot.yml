@@ -15,7 +15,6 @@ updates:
       docusaurus:
         patterns:
           - "@docusaurus*"
-    groups:
       npm-all:
         patterns:
           - "*"
