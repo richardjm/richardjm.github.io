@@ -1,8 +1,11 @@
 # TV Remote
 
-I use a Broadlink RM mini 3 to control my tv, soundbard, roku and humax devices. So perhaps the codes below will help you or not. I have encapsulated my calls to the remote
-into a single separate script which I can use a drop-down to send from other automations
-without having to using magical strings.
+I use a Broadlink RM mini 3 to control my tv, soundbard and humax devices. So perhaps the codes
+below will help you or not. I have encapsulated my calls to the remoteinto a single separate
+script which I can use a drop-down to send from other automationswithout having to using magical
+strings.
+
+I used to control my Roku 3 using IR I've since switched to a Roku Streaming Stick and using remote commands directly.
 
 I also haved configured some imitation screens for the physical remotes in home
 assistant which can be used link the physical ones.
@@ -109,10 +112,14 @@ cards:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - play pause
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: play
                 icon: mdi:play-pause
                 icon_color: green
               - type: template
@@ -124,10 +131,14 @@ cards:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - home
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: home
                 icon: mdi:home-outline
             grid_options:
               columns: 6
@@ -165,20 +176,28 @@ sections:
           - type: custom:mushroom-chips-card
             chips:
               - type: action
-                hold_action:
-                  action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
-                  data:
-                    button: roku - back
                 icon: mdi:keyboard-backspace
+                tap_action:
+                  action: perform-action
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
+                  data:
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: back
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - home
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: home
                 icon: mdi:home-outline
             alignment: center
             card_mod:
@@ -191,10 +210,14 @@ sections:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - up
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: up
                 icon: mdi:arrow-up-bold
                 icon_color: purple
             alignment: center
@@ -208,19 +231,27 @@ sections:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - left
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: left
                 icon: mdi:arrow-left-bold
                 icon_color: purple
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - right
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: right
                 icon: mdi:arrow-right-bold
                 icon_color: purple
             alignment: center
@@ -234,10 +265,14 @@ sections:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - down
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: down
                 icon: mdi:arrow-down-bold
                 icon_color: purple
             alignment: center
@@ -251,27 +286,39 @@ sections:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - instant replay
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: replay
+                    num_repeats: 1
                 icon: mdi:replay
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - ok
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: select
                 icon: mdi:checkbox-marked-circle
                 icon_color: purple
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - * menu
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: info
                 icon: mdi:asterisk
             alignment: center
             card_mod:
@@ -284,27 +331,39 @@ sections:
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - rewind
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: reverse
                 icon: mdi:rewind
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - play pause
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: play
                 icon: mdi:play-pause
                 icon_color: green
               - type: action
                 tap_action:
                   action: perform-action
-                  perform_action: script.remote_send
-                  target: {}
+                  perform_action: remote.send_command
+                  target:
+                    entity_id: remote.roku
                   data:
-                    button: roku - fast forward
+                    num_repeats: 1
+                    delay_secs: 0.4
+                    hold_secs: 0
+                    command: forward
                 icon: mdi:fast-forward
             alignment: center
             card_mod:
@@ -351,7 +410,7 @@ header:
   card:
     type: markdown
     text_only: true
-    content: "# Roku"
+    content: '# Roku'
 cards: []
 subview: true
 ```
