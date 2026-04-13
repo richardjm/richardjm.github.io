@@ -1,8 +1,8 @@
 # TV Remote
 
 I use a Broadlink RM mini 3 to control my tv, soundbard and humax devices. So perhaps the codes
-below will help you or not. I have encapsulated my calls to the remoteinto a single separate
-script which I can use a drop-down to send from other automationswithout having to using magical
+below will help you or not. I have encapsulated my calls to the remote into a single separate
+script which I can use a drop-down to send from other automations without having to using magical
 strings.
 
 I used to control my Roku 3 using IR I've since switched to a Roku Streaming Stick and using remote commands directly.
