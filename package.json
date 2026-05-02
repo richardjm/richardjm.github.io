@@ -12,10 +12,10 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@docusaurus/core": "^3.10.0",
-    "@docusaurus/module-type-aliases": "^3.10.0",
-    "@docusaurus/preset-classic": "^3.10.0",
-    "@docusaurus/theme-mermaid": "^3.10.0",
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/module-type-aliases": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
+    "@docusaurus/theme-mermaid": "^3.10.1",
     "@mdx-js/react": "^3.1.1",
     "@playwright/test": "^1.59.1",
     "dompurify": ">=3.4.1",
