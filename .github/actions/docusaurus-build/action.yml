@@ -9,18 +9,10 @@ runs:
   using: composite
   steps:
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ inputs.node-version }}
         cache: npm
-
-    - name: Cache npm dependencies
-      uses: actions/cache@v5
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-
 
     - name: Install dependencies
       shell: bash
@@ -39,7 +31,7 @@ runs:
       run: npm test
 
     - name: Publish Playwright test results
-      uses: dorny/test-reporter@v2
+      uses: dorny/test-reporter@v3
       if: ${{ always() && github.actor != 'nektos/act' }}
       with:
         name: Playwright Tests
